@@ -6,13 +6,14 @@
 class PWM_LED
 {
   private:
-    PwmOut pwmOut;
     PinName pinName;
 
   public:
+    PwmOut pwmOut;
+
     PWM_LED(PinName pinName);
+
     PinName getPinName();
-    PwmOut getPWM();
     void on();
     void on(float brightness);
     void off();

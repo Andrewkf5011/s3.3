@@ -11,11 +11,6 @@ PinName LED::getPinName()
   return pinName;
 }
 
-DigitalOut LED::getDigitalOut()
-{
-  return digitalOut;
-}
-
 void LED::on()
 {
   digitalOut.write(0);

@@ -6,13 +6,14 @@
 class LED
 {
   private:
-    DigitalOut digitalOut;
     PinName pinName;
 
   public:
+    DigitalOut digitalOut;
+
     LED(PinName pinName);
+
     PinName getPinName();
-    DigitalOut getDigitalOut();
     void on();
     void off();
 };

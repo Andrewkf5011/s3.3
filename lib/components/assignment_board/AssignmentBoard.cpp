@@ -26,3 +26,5 @@ const PinName AssignmentBoard::SHIELD_SW_RIGHT = A5;
 //Potentiometers
 const PinName AssignmentBoard::SHIELD_LEFT_POTENTIOMETER = A0;
 const PinName AssignmentBoard::SHIELD_RIGHT_POTENTIOMETER = A1;
+//speaker
+const PinName AssignmentBoard::SHIELD_SPEAKER = D6;

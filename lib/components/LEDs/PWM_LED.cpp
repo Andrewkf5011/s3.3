@@ -11,11 +11,6 @@ PinName PWM_LED::getPinName()
   return pinName;
 }
 
-PwmOut PWM_LED::getPWM()
-{
-  return pwmOut;
-}
-
 void PWM_LED::on()
 {
   pwmOut.write(0);

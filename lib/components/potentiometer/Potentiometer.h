@@ -6,13 +6,14 @@
 class Potentiometer
 {
   private:
-    AnalogIn analogIn;
     PinName pinName;
 
   public:
+    AnalogIn analogIn;
+
     Potentiometer(PinName pinName);
+
     PinName getPinName();
-    AnalogIn getAnalogIn();
     float read();
 };
 

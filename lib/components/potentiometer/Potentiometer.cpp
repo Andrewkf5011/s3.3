@@ -11,11 +11,6 @@ PinName Potentiometer::getPinName()
   return pinName;
 }
 
-AnalogIn Potentiometer::getAnalogIn()
-{
-  return analogIn;
-}
-
 float Potentiometer::read()
 {
   return analogIn.read();

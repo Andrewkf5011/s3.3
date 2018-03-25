@@ -30,7 +30,8 @@ class AssignmentBoard
     //Potentiometers
     static const PinName SHIELD_LEFT_POTENTIOMETER;
     static const PinName SHIELD_RIGHT_POTENTIOMETER;
-
+    //speaker
+    static const PinName SHIELD_SPEAKER;
 };
 
 #endif // ASSIGNMENTBOARD_H
