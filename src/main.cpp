@@ -21,7 +21,7 @@ int main()
             speaker.pwmOut.period(1.0/f);
 
             speaker.play();
-            
+
             wait(0.1);
         }
 
@@ -32,3 +32,6 @@ int main()
         while(!(fire.digitalIn));
     }
 }
+
+//https://docs.mbed.com/docs/mbed-os-api-reference/en/5.1/APIs/io/PwmOut/
+//http://aquaticus.info/pwm-music
