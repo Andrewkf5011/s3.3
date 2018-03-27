@@ -26,6 +26,8 @@ void playNote(float key, float length)
   speaker.play();
 
   wait(length);
+
+  speaker.stop();
 }
 
 int main()
@@ -44,21 +46,64 @@ int main()
         //     wait(0.1);
         // }
 
+        //First line
+        playNote(47, 0.25); //G
+        playNote(47, 0.25); //G
+        playNote(47, 0.25); //G
 
-        playNote(66, 2); //D
-        playNote(66, 2); //A
-        playNote(71, 0.5) //G
-        playNote(69, )
+        playNote(52, 0.5); //C
 
+        playNote(59, 0.5); //G
 
-        // playNote(64); //C
-        // playNote(63); //B
-        // playNote(61); //A
-        // playNote(66); //D
-        // playNote(64); //C
-        // playNote(63); //B
-        // playNote(61); //A
-        // playNote(66); //D
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(56, 0.25); //D
+
+        playNote(64, 0.5); //C
+
+        playNote(59, 0.5); //G
+
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(56, 0.25); //D
+
+        playNote(64, 0.5); //C
+
+        playNote(59, 0.5); //G
+
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(58, 0.25); //F
+        playNote(57, 1); //E
+
+        playNote(47, 0.25); //G
+        playNote(47, 0.25); //G
+        playNote(47, 0.5); //G
+
+        playNote(52, 0.5); //C
+
+        playNote(59, 0.5); //G
+
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(56, 0.5); //D
+
+        playNote(64, 0.5); //C
+
+        playNote(59, 0.5); //G
+
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(56, 0.5); //D
+
+        playNote(64, 0.5); //C
+
+        playNote(59, 0.5); //G
+
+        playNote(58, 0.25); //F
+        playNote(57, 0.25); //E
+        playNote(58, 0.5); //F
+        playNote(57, 1); //E
 
 
         green.off();
