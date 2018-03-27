@@ -47,63 +47,63 @@ int main()
         // }
 
         //First line
-        playNote(47, 0.25); //G
-        playNote(47, 0.25); //G
-        playNote(47, 0.25); //G
+        playNote(47, 0.2); //G
+        playNote(47, 0.2); //G
+        playNote(47, 0.1); //G
 
-        playNote(52, 0.5); //C
+        playNote(52, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(56, 0.25); //D
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(56, 0.2); //D
 
-        playNote(64, 0.5); //C
+        playNote(64, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(56, 0.25); //D
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(56, 0.2); //D
 
-        playNote(64, 0.5); //C
+        playNote(64, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(58, 0.25); //F
-        playNote(57, 1); //E
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(58, 0.2); //F
+        playNote(57, 0.5); //E
 
-        playNote(47, 0.25); //G
-        playNote(47, 0.25); //G
-        playNote(47, 0.5); //G
+        playNote(47, 0.2); //G
+        playNote(47, 0.2); //G
+        playNote(47, 0.3); //G
 
-        playNote(52, 0.5); //C
+        playNote(52, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(56, 0.5); //D
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(56, 0.3); //D
 
-        playNote(64, 0.5); //C
+        playNote(64, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(56, 0.5); //D
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(56, 0.3); //D
 
-        playNote(64, 0.5); //C
+        playNote(64, 0.3); //C
 
-        playNote(59, 0.5); //G
+        playNote(59, 0.3); //G
 
-        playNote(58, 0.25); //F
-        playNote(57, 0.25); //E
-        playNote(58, 0.5); //F
-        playNote(57, 1); //E
+        playNote(58, 0.2); //F
+        playNote(57, 0.2); //E
+        playNote(58, 0.3); //F
+        playNote(57, 0.5); //E
 
 
         green.off();
