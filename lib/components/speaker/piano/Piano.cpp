@@ -150,3 +150,23 @@ const float Piano::KEY_G8_SHARP = 105.0;
 const float Piano::KEY_A9 = 106.0;
 const float Piano::KEY_A9_SHARP = 107.0;
 const float Piano::KEY_B9 = 108.0;
+
+//Constant declarations (Notes).
+const float Piano::NOTE_WHOLE = 4.0; //(Semibreve)
+const float Piano::NOTE_WHOLE_DOTTED = 6.0; //(Semibreve)
+const float Piano::NOTE_HALF = 2.0; //(Minim)
+const float Piano::NOTE_HALF_DOTTED = 3.0; //(Minim)
+const float Piano::NOTE_QUARTER = 1.0; //(Crotchet)
+const float Piano::NOTE_QUARTER_DOTTED = 1.5; //(Crotchet)
+const float Piano::NOTE_EIGHTH = 0.5; //(Quaver)
+const float Piano::NOTE_EIGHTH_DOTTED = 0.75; //(Quaver)
+const float Piano::NOTE_SIXTEENTH = 0.25; //(Semiquaver)
+const float Piano::NOTE_SIXTEENTH_DOTTED = 0.375; //(Semiquaver)
+
+//Constant declarations (Tempos).
+const float Piano::TEMPO_LARGO = 50.0; //(Very Slow)
+const float Piano::TEMPO_ADAGIO = 66.0; //(Slow)
+const float Piano::TEMPO_ANDANTE = 84.0; //(Moderate)
+const float Piano::TEMPO_ALLEGRO = 114.0; //(Fast)
+const float Piano::TEMPO_VIVACE = 150.0; //(Lively)
+const float Piano::TEMPO_PRESTO = 188.0; //(Very Fast)

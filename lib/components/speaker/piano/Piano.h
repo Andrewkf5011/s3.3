@@ -144,6 +144,26 @@ class Piano
     static const float KEY_A9;
     static const float KEY_A9_SHARP;
     static const float KEY_B9;
+
+    //Constant definitions (Notes).
+    static const float NOTE_WHOLE; //(Semibreve)
+    static const float NOTE_WHOLE_DOTTED; //(Semibreve)
+    static const float NOTE_HALF; //(Minim)
+    static const float NOTE_HALF_DOTTED; //(Minim)
+    static const float NOTE_QUARTER; //(Crotchet)
+    static const float NOTE_QUARTER_DOTTED; //(Crotchet)
+    static const float NOTE_EIGHTH; //(Quaver)
+    static const float NOTE_EIGHTH_DOTTED; //(Quaver)
+    static const float NOTE_SIXTEENTH; //(Semiquaver)
+    static const float NOTE_SIXTEENTH_DOTTED; //(Semiquaver)
+
+    //Constant definitions (Tempos).
+    static const float TEMPO_LARGO; //(Very Slow)
+    static const float TEMPO_ADAGIO; //(Slow)
+    static const float TEMPO_ANDANTE; //(Moderate)
+    static const float TEMPO_ALLEGRO; //(Fast)
+    static const float TEMPO_VIVACE; //(Lively)
+    static const float TEMPO_PRESTO; //(Very Fast)
 };
 
 #endif // PIANO_H

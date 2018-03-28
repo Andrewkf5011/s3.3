@@ -5,3 +5,5 @@
 #include "potentiometer/Potentiometer.h"
 #include "speaker/Speaker.h"
 #include "speaker/piano/Piano.h"
+#include "speaker/piano/songs/Song.h"
+#include "speaker/piano/songs/StarWars.cpp"
