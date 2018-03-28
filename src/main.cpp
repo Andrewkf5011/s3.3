@@ -7,7 +7,7 @@ AssignmentBoard board;
 Button fire(board.SHIELD_SW_CENTER, false);
 LED green(board.SHIELD_GREEN_LED);
 
-Piano piano(speaker(board.SHIELD_SPEAKER));
+Piano piano(Speaker(board.SHIELD_SPEAKER));
 StarWars starWarsMusic(piano, piano.TEMPO_ALLEGRO);
 
 int main()

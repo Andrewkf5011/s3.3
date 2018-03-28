@@ -13,18 +13,20 @@ class StarWars: public Song
 
     void playSong()
     {
+      //Song from: https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0133739
+
       //First line
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_QUARTER));
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_QUARTER));
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_QUARTER));
 
-      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_QUARTER));
-      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_QUARTER));
+      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_EIGHTH));
 
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_QUARTER));
 
-      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_QUARTER));
-      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_QUARTER));
+      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_EIGHTH));
 
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_HALF));
 
@@ -38,9 +40,23 @@ class StarWars: public Song
 
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_QUARTER));
 
-      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_QUARTER));
-      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_QUARTER));
+      piano.playNote(piano.KEY_F3, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_C4, calculateNoteDuration(piano.NOTE_EIGHTH));
 
       piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_HALF));
+
+      piano.playNote(piano.KEY_A5, calculateNoteDuration(piano.NOTE_QUARTER));
+      piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_A4, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_A5, calculateNoteDuration(piano.NOTE_QUARTER));
+
+      piano.playNote(piano.KEY_A5, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_G4, calculateNoteDuration(piano.NOTE_EIGHTH));
+
+      //Third line
+      piano.playNote(piano.KEY_G4, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_F4, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_G4, calculateNoteDuration(piano.NOTE_EIGHTH));
+      piano.playNote(piano.KEY_B4, calculateNoteDuration(piano.NOTE_EIGHTH));
     }
 };
