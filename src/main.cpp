@@ -8,85 +8,53 @@ Button fire(board.SHIELD_SW_CENTER, false);
 LED green(board.SHIELD_GREEN_LED);
 
 Speaker speaker(board.SHIELD_SPEAKER);
+Piano piano(speaker);
 
-float getFrequency(float key)
+void starWars()
 {
-  float frequency = pow(2.0, ((key - 49)/12)) * 440;
+  //First line
+  piano.playNote(piano.KEY_A4, 0.5);
+  piano.playNote(piano.KEY_A4, 0.5);
+  piano.playNote(piano.KEY_A4, 0.5);
+  
+  piano.playNote(piano.KEY_F3, 0.25);
+  piano.playNote(piano.KEY_C4, 0.25);
 
-  printf("Key %f = frequecncy: %f \n",  key, frequency );
+  piano.playNote(piano.KEY_A4, 0.5);
 
-  return frequency;
-}
+  piano.playNote(piano.KEY_F3, 0.25);
+  piano.playNote(piano.KEY_C4, 0.25);
 
-void playNote(float key, float length)
-{
+  piano.playNote(piano.KEY_A4, 0.75);
 
+  //Second line
+  piano.playNote(piano.KEY_E4, 0.5);
+  piano.playNote(piano.KEY_E4, 0.5);
+  piano.playNote(piano.KEY_E4, 0.5);
 
-  speaker.pwmOut.period(1/getFrequency(key));
-  speaker.play();
+  piano.playNote(piano.KEY_F3, 0.25);
+  piano.playNote(piano.KEY_C4, 0.25);
 
-  wait(length);
+  piano.playNote(piano.KEY_A4, 0.5);
 
-  speaker.stop();
+  piano.playNote(piano.KEY_F3, 0.25);
+  piano.playNote(piano.KEY_C4, 0.25);
+
+  piano.playNote(piano.KEY_A4, 0.75);
 }
 
 int main()
 {
     while (1)
     {
-
         green.on();
 
-        // for (f=20.0; f<20.0e3; f+=100)
-        // {
-        //     speaker.pwmOut.period(1.0/f);
-        //
-        //     speaker.play();
-        //
-        //     wait(0.1);
-        // }
-
-        //First line
-        playNote(49, 0.5); //A
-        playNote(49, 0.5); //A
-        playNote(49, 0.5); //A
-
-        playNote(45, 0.25); //F
-        playNote(52, 0.25); //F
-
-        playNote(49, 0.5); //A
-
-        playNote(45, 0.25); //F
-        playNote(52, 0.25); //C
-
-        playNote(49, 0.75); //A
-        wait(0.5);
-
-        //Second line
-        playNote(56, 0.5); //E
-        playNote(56, 0.5); //E
-        playNote(56, 0.5); //E
-
-        playNote(45, 0.25); //F
-        playNote(52, 0.25); //C
-
-        playNote(49, 0.5); //A
-
-        playNote(45, 0.25); //F
-        playNote(52, 0.25); //C
-
-        playNote(49, 0.75); //A
-
+        starWars();
 
         green.off();
 
         speaker.stop();
 
-
-
         while(!(fire.digitalIn));
     }
 }
-
-//https://docs.mbed.com/docs/mbed-os-api-reference/en/5.1/APIs/io/PwmOut/
-//http://aquaticus.info/pwm-music

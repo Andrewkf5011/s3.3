@@ -11,9 +11,8 @@ class Speaker
 
   public:
     PwmOut pwmOut;
-
     Speaker(PinName pinName);
-    
+
     PinName getPinName();
     void play();
     void stop();

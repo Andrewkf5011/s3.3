@@ -4,3 +4,4 @@
 #include "button/Button.h"
 #include "potentiometer/Potentiometer.h"
 #include "speaker/Speaker.h"
+#include "speaker/piano/Piano.h"
