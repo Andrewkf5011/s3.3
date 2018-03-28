@@ -47,63 +47,35 @@ int main()
         // }
 
         //First line
-        playNote(47, 0.2); //G
-        playNote(47, 0.2); //G
-        playNote(47, 0.1); //G
+        playNote(49, 0.5); //A
+        playNote(49, 0.5); //A
+        playNote(49, 0.5); //A
 
-        playNote(52, 0.3); //C
+        playNote(45, 0.25); //F
+        playNote(52, 0.25); //F
 
-        playNote(59, 0.3); //G
+        playNote(49, 0.5); //A
 
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(56, 0.2); //D
+        playNote(45, 0.25); //F
+        playNote(52, 0.25); //C
 
-        playNote(64, 0.3); //C
+        playNote(49, 0.75); //A
+        wait(0.5);
 
-        playNote(59, 0.3); //G
+        //Second line
+        playNote(56, 0.5); //E
+        playNote(56, 0.5); //E
+        playNote(56, 0.5); //E
 
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(56, 0.2); //D
+        playNote(45, 0.25); //F
+        playNote(52, 0.25); //C
 
-        playNote(64, 0.3); //C
+        playNote(49, 0.5); //A
 
-        playNote(59, 0.3); //G
+        playNote(45, 0.25); //F
+        playNote(52, 0.25); //C
 
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(58, 0.2); //F
-        playNote(57, 0.5); //E
-
-        playNote(47, 0.2); //G
-        playNote(47, 0.2); //G
-        playNote(47, 0.3); //G
-
-        playNote(52, 0.3); //C
-
-        playNote(59, 0.3); //G
-
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(56, 0.3); //D
-
-        playNote(64, 0.3); //C
-
-        playNote(59, 0.3); //G
-
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(56, 0.3); //D
-
-        playNote(64, 0.3); //C
-
-        playNote(59, 0.3); //G
-
-        playNote(58, 0.2); //F
-        playNote(57, 0.2); //E
-        playNote(58, 0.3); //F
-        playNote(57, 0.5); //E
+        playNote(49, 0.75); //A
 
 
         green.off();
