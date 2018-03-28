@@ -8,7 +8,7 @@ Button fire(board.SHIELD_SW_CENTER, false);
 LED green(board.SHIELD_GREEN_LED);
 
 Piano piano(Speaker(board.SHIELD_SPEAKER));
-StarWars starWarsMusic(piano, piano.TEMPO_ALLEGRO);
+StarWars starWarsMusic(piano, piano.TEMPO_ANDANTE);
 
 int main()
 {
