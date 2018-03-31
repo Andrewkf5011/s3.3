@@ -21,7 +21,7 @@ class Button
         bool usesPullUpResistor;
 
     public:
-        //[digitalIn] Used to represent the button itself.
+        //[digitalIn] Refers to the digital input from the button.
         DigitalIn digitalIn;
 
         /**

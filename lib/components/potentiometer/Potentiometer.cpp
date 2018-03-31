@@ -1,17 +1,17 @@
-#include "Potentiometer.h"
 #include <mbed.h>
+#include "Potentiometer.h"
 
 Potentiometer::Potentiometer(PinName pinName) : analogIn(pinName)
 {
-  Potentiometer::pinName = pinName;
+    Potentiometer::pinName = pinName;
 }
 
 PinName Potentiometer::getPinName()
 {
-  return pinName;
+    return pinName;
 }
 
 float Potentiometer::read()
 {
-  return analogIn.read();
+    return analogIn.read();
 }

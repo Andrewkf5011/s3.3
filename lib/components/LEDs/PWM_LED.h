@@ -18,7 +18,7 @@ class PWM_LED
         PinName pinName;
 
     public:
-        //[pwmOut] Refers to the LED itself.
+        //[pwmOut] Refers to the pulse width modulation output from the LED.
         PwmOut pwmOut;
 
         /**

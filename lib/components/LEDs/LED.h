@@ -17,7 +17,7 @@ class LED
         PinName pinName;
 
     public:
-        //[digitalOut] Used to represent the LED itself.
+        //[digitalOut] Refers to the digital output from the LED.
         DigitalOut digitalOut;
 
         /**
