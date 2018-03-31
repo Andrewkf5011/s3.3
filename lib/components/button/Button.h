@@ -4,19 +4,44 @@
 #include<mbed.h>
 #include<stdbool.h>
 
+/**
+ * @brief Describes a button component.
+ *
+ * Version: 1.0
+ * Date: 23/03/2018
+ * Originally Created: 23/03/2018
+ */
 class Button
 {
-  private:
-    PinName pinName;
-    bool usesPullUpResistor;
+    private:
+        //[pinName] This is the name of the pin that the button is wired to.
+        PinName pinName;
+        //[usesPullUpResistor] If true then this button is wired using a pull
+        //up resistor.
+        bool usesPullUpResistor;
 
-  public:
-    DigitalIn digitalIn;
+    public:
+        //[digitalIn] Used to represent the button itself.
+        DigitalIn digitalIn;
 
-    Button(PinName pinName, bool usesPullUpResistor);
+        /**
+         * @brief Constructor for the Button class.
+         * @param pinName This is the name of the pin that the button is wired
+         *                to.
+         * @param usesPullUpResistor If true then this button is wired using a
+                                     pull up resistor.
+         */
+        Button(PinName pinName, bool usesPullUpResistor);
 
-    PinName getPinName();
-    bool isPressed();
+        /**
+         * @return Returns the name of the pin that the button is wired to.
+         */
+        PinName getPinName();
+
+        /**
+         * @return Returns true if the button is currently being pressed.
+         */
+        bool isPressed();
 
 };
 
