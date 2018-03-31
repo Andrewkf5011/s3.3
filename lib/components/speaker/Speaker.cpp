@@ -1,22 +1,22 @@
-#include "Speaker.h"
 #include <mbed.h>
+#include "Speaker.h"
 
 Speaker::Speaker(PinName pinName) : pwmOut(pinName)
 {
-  Speaker::pinName = pinName;
+    Speaker::pinName = pinName;
 }
 
 PinName Speaker::getPinName()
 {
-  return pinName;
+    return pinName;
 }
 
 void Speaker::play()
 {
-  pwmOut.write(0.5);
+    pwmOut.write(1);
 }
 
 void Speaker::stop()
 {
-  pwmOut.write(0);
+    pwmOut.write(0);
 }

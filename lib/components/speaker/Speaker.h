@@ -3,19 +3,44 @@
 #ifndef SPEAKER_H
 #define SPEAKER_H
 
+/**
+ * @brief Describes a speaker component.
+ *
+ * Version: 1.0
+ * Date: 25/03/2018
+ * Originally Created: 25/03/2018
+ */
 class Speaker
 {
-  private:
+    private:
+        //[pinName] This is the name of the pin that the speaker is wired to.
+        PinName pinName;
 
-    PinName pinName;
+    public:
+        //[pwmOut] Refers to the pulse width modulation output from the speaker.
+        PwmOut pwmOut;
 
-  public:
-    PwmOut pwmOut;
-    Speaker(PinName pinName);
+        /**
+         * @brief This is the constructor for the speaker class.
+         * @param pinName This is the name of the pin that the speaker
+         *                is wired to.
+         */
+        Speaker(PinName pinName);
 
-    PinName getPinName();
-    void play();
-    void stop();
+        /**
+         * @return Returns the name of the pin that the speaker is wired to.
+         */
+        PinName getPinName();
+
+        /**
+         * @brief Turns the speaker on.
+         */
+        void play();
+
+        /**
+         * @brief Turns the speaker off.
+         */
+        void stop();
 };
 
 #endif // SPEAKER_H

@@ -4,7 +4,7 @@
 #define POTENTIOMETER_H
 
 /**
- * @brief Describes a Potentiometer component.
+ * @brief Describes a potentiometer component.
  *
  * Version: 1.0
  * Date: 24/03/2018
@@ -23,8 +23,8 @@ class Potentiometer
 
         /**
          * @brief This is the constructor for the potentiometer class.
-         * @param pinName This is the name of the pin that the potentiometer is
-                          wired to.
+         * @param pinName This is the name of the pin that the potentiometer
+         *                is wired to.
          */
         Potentiometer(PinName pinName);
 
