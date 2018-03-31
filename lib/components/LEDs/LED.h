@@ -3,19 +3,43 @@
 #ifndef LED_H
 #define LED_H
 
+/**
+ * @brief Describes an LED component.
+ *
+ * Version: 1.3
+ * Date: 21/03/2018
+ * Originally Created: 23/03/2018
+ */
 class LED
 {
-  private:
-    PinName pinName;
+    private:
+        //[pinName] This is the name of the pin that the LED is wired to.
+        PinName pinName;
 
-  public:
-    DigitalOut digitalOut;
+    public:
+        //[digitalOut] Used to represent the LED itself.
+        DigitalOut digitalOut;
 
-    LED(PinName pinName);
+        /**
+         * @brief Constructor for the LED class.
+         * @param pinName This is the name of the pin that the LED is wired to.
+         */
+        LED(PinName pinName);
 
-    PinName getPinName();
-    void on();
-    void off();
+        /**
+         * @return Returns the name of the pin that the LED is wired to.
+         */
+        PinName getPinName();
+
+        /**
+         * Turns the LED on.
+         */
+        void on();
+
+        /**
+         * Turns the LED off.
+         */
+        void off();
 };
 
 #endif // LED_H

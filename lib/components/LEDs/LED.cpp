@@ -3,20 +3,20 @@
 
 LED::LED(PinName pinName) : digitalOut(pinName,1)
 {
-  LED::pinName = pinName;
+    LED::pinName = pinName;
 }
 
 PinName LED::getPinName()
 {
-  return pinName;
+    return pinName;
 }
 
 void LED::on()
 {
-  digitalOut.write(0);
+    digitalOut.write(0);
 }
 
 void LED::off()
 {
-  digitalOut.write(1);
+    digitalOut.write(1);
 }
