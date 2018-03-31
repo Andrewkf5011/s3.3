@@ -2,9 +2,17 @@
 #define ASSIGNMENTBOARD_H
 #include<mbed.h>
 
+/**
+ * @brief For use when referencing the different components on the board to be
+ *        used in the KF5011 assignment.
+ *
+ * Version: 1.4
+ * Date: 30/03/2018
+ * Originally Created: 22/03/2018
+ */
 class AssignmentBoard
 {
-  public:
+    public:
     //Constant declarations (K64F).
 
     //LEDs

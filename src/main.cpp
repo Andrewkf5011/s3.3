@@ -1,7 +1,7 @@
 #include <cmath>
 #include "mbed.h"
-#include "components.h"
 #include "music.h"
+#include "components.h"
 
 /**
  * An Example program to use the speaker on the application shield.
