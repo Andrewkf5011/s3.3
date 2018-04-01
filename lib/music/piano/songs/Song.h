@@ -19,12 +19,23 @@ class Song
         //[piano] This is the piano to play the song on.
         Piano piano;
 
-        //float calculateNoteDuration(float noteType);
-        
+        //[tempo] This is the tempo to play the song at
+        //(beats per minute).
         float tempo;
 
     public:
+
+        /**
+         * @brief Constructor for the song class.
+         * @param piano This is the piano to play the song on.
+         * @param tempo This is the tempo being played at
+         *              (number of beats per minute).
+         */
         Song(Piano piano, float tempo);
+
+        /**
+         * @brief Plays the song.
+         */
         virtual void playSong();
 };
 
