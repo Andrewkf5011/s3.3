@@ -1,6 +1,6 @@
+#include <mbed.h>
 #include "Piano.h"
 #include "Speaker.h"
-#include <mbed.h>
 
 Piano::Piano(Speaker speaker) : speaker(speaker)
 {
@@ -8,17 +8,17 @@ Piano::Piano(Speaker speaker) : speaker(speaker)
 
 float Piano::getFrequency(float key)
 {
-  float frequency = pow(2.0, ((key - 49)/12)) * 440;
+    float frequency = pow(2.0, ((key - 49)/12)) * 440;
 
-  return frequency;
+    return frequency;
 }
 
 void Piano::playNote(float key, float noteDuration)
 {
-  Piano::speaker.pwmOut.period(1/ Piano::getFrequency(key));
-  Piano::speaker.play();
-  wait(noteDuration);
-  Piano::speaker.stop();
+    Piano::speaker.pwmOut.period(1/ Piano::getFrequency(key));
+    Piano::speaker.play();
+    wait(noteDuration);
+    Piano::speaker.stop();
 }
 
 //Constant declarations (Piano Keys).
