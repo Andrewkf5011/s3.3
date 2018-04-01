@@ -5,18 +5,41 @@
 #ifndef PIANO_H
 #define PIANO_H
 
+/**
+ * @brief Describes a piano which uses a speaker to play music.
+ *
+ * Version: 1.1
+ * Date: 28/03/2018
+ * Originally Created: 29/03/2018
+ */
 class Piano
 {
     private:
+        //[speaker] A speaker used to output sound from the piano.
         Speaker speaker;
+
+        /**
+         * @param key This is the key that has been "pressed".
+         * @return Returns the frequecny that sould be played when the when a
+         *         given key is "pressed".
+         */
         float getFrequency(float key);
 
     public:
+        /**
+         * @brief Constructor for the piano class.
+         * @param This is the speaker used to output sound from the piano.
+         */
         Piano(Speaker speaker);
+
+        /**
+         * @brief Plays a note on the piano.
+         * @param This is the key that was "pressed".
+         * @param How long the note should be played for (seconds).
+         */
         void playNote(float key, float noteDuration);
 
         //Constant definitions (Piano Keys).
-
         //Group 0: 16.3516hz to 25.9565hz
         static const float KEY_C0;
         static const float KEY_C0_SHARP;
@@ -27,7 +50,6 @@ class Piano
         static const float KEY_F0_SHARP;
         static const float KEY_G0;
         static const float KEY_G0_SHARP;
-
         //Group 1: 27.5000hz to 51.9131hz
         static const float KEY_A1;
         static const float KEY_A1_SHARP;
@@ -41,7 +63,6 @@ class Piano
         static const float KEY_F1_SHARP;
         static const float KEY_G1;
         static const float KEY_G1_SHARP;
-
         //Group 2: 55.0000hz to 103.826hz
         static const float KEY_A2;
         static const float KEY_A2_SHARP;
@@ -55,7 +76,6 @@ class Piano
         static const float KEY_F2_SHARP;
         static const float KEY_G2;
         static const float KEY_G2_SHARP;
-
         //Group 3: 110.000hz to 207.652hz
         static const float KEY_A3;
         static const float KEY_A3_SHARP;
@@ -69,7 +89,6 @@ class Piano
         static const float KEY_F3_SHARP;
         static const float KEY_G3;
         static const float KEY_G3_SHARP;
-
         //Group 4: 220.000hz to 415.305hz
         static const float KEY_A4;
         static const float KEY_A4_SHARP;
@@ -83,7 +102,6 @@ class Piano
         static const float KEY_F4_SHARP;
         static const float KEY_G4;
         static const float KEY_G4_SHARP;
-
         //Group 5: 440.000hz to 830.609hz
         static const float KEY_A5;
         static const float KEY_A5_SHARP;
@@ -97,7 +115,6 @@ class Piano
         static const float KEY_F5_SHARP;
         static const float KEY_G5;
         static const float KEY_G5_SHARP;
-
         //Group 6: 880.000hz to 1661.22hz
         static const float KEY_A6;
         static const float KEY_A6_SHARP;
@@ -111,7 +128,6 @@ class Piano
         static const float KEY_F6_SHARP;
         static const float KEY_G6;
         static const float KEY_G6_SHARP;
-
         //Group 7: 1760.00hz to 3322.44hz
         static const float KEY_A7;
         static const float KEY_A7_SHARP;
@@ -125,7 +141,6 @@ class Piano
         static const float KEY_F7_SHARP;
         static const float KEY_G7;
         static const float KEY_G7_SHARP;
-
         //Group 8: 3520.00hz to 6644.88hz
         static const float KEY_A8;
         static const float KEY_A8_SHARP;
@@ -139,7 +154,6 @@ class Piano
         static const float KEY_F8_SHARP;
         static const float KEY_G8;
         static const float KEY_G8_SHARP;
-
         //Group 9: 7040.00hz to 7902.13hz
         static const float KEY_A9;
         static const float KEY_A9_SHARP;
@@ -156,7 +170,7 @@ class Piano
         static const float NOTE_EIGHTH_DOTTED; //(Quaver)
         static const float NOTE_SIXTEENTH; //(Semiquaver)
         static const float NOTE_SIXTEENTH_DOTTED; //(Semiquaver)
-
+        
         //Constant definitions (Tempos).
         static const float TEMPO_LARGO; //(Very Slow)
         static const float TEMPO_ADAGIO; //(Slow)
