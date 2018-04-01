@@ -3,21 +3,32 @@
 #include<mbed.h>
 #include<stdbool.h>
 
-//Another song which may be worth looking at: https://musescore.com/user/8335901/scores/2590566
-
-
+/**
+ * @brief The sheet music for the Darth Vader theme from StarWars.
+ *
+ * Version: 1.3
+ * Date: 27/03/2018
+ * Originally Created: 29/03/2018
+ */
 class StarWars: public Song
 {
   public:
+
+    /**
+     * @brief Constructor for the StarWars theme.
+     * @param piano This is the pinao to play the song on.
+     * @param tempo This is the tempo to play the song at.
+     */
     StarWars(Piano piano, float tempo) : Song(piano, tempo)
     {
 
     }
 
+    /**
+     * @brief Plays the song.
+     */
     void playSong()
     {
-      //Song from: https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0133739
-
       //First line
       piano.playNote(piano.KEY_A4, piano.calculateNoteDuration(piano.NOTE_QUARTER, tempo));
       piano.playNote(piano.KEY_A4, piano.calculateNoteDuration(piano.NOTE_QUARTER, tempo));
