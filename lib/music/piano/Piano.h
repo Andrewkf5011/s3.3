@@ -34,10 +34,19 @@ class Piano
 
         /**
          * @brief Plays a note on the piano.
-         * @param This is the key that was "pressed".
-         * @param How long the note should be played for (seconds).
+         * @param key This is the key that was "pressed".
+         * @param noteDuration How long the note should be played for (seconds).
          */
         void playNote(float key, float noteDuration);
+
+        /**
+         * @param noteType This is the type of note to be played.
+         * @param tempo This is the tempo being played at
+         *              (number of beats per minute).
+         * @return Returns the duration (in seconds) that the note should be
+         *         played for.
+         */
+        float calculateNoteDuration(float noteType, float tempo);
 
         //Constant definitions (Piano Keys).
         //Group 0: 16.3516hz to 25.9565hz
@@ -170,7 +179,7 @@ class Piano
         static const float NOTE_EIGHTH_DOTTED; //(Quaver)
         static const float NOTE_SIXTEENTH; //(Semiquaver)
         static const float NOTE_SIXTEENTH_DOTTED; //(Semiquaver)
-        
+
         //Constant definitions (Tempos).
         static const float TEMPO_LARGO; //(Very Slow)
         static const float TEMPO_ADAGIO; //(Slow)

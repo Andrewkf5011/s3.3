@@ -23,6 +23,13 @@ void Piano::playNote(float key, float noteDuration)
     Piano::speaker.stop();
 }
 
+float Piano::calculateNoteDuration(float noteType, float tempo)
+{
+    //Calculate the number of beats per second and
+    //multiply it by the note type.
+    return ((60/tempo) * noteType);
+}
+
 //Constant declarations (Piano Keys).
 //Group 0: 16.3516hz to 25.9565hz
 const float Piano::KEY_C0 = 89.0;
