@@ -13,7 +13,7 @@ PinName Speaker::getPinName()
 
 void Speaker::play()
 {
-    pwmOut.write(1);
+    pwmOut.write(0.5);
 }
 
 void Speaker::stop()

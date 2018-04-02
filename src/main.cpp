@@ -5,10 +5,10 @@
 
 /**
  * An Example program to use the speaker on the application shield.
- * (Plays the Darth Vader theme)
+ * (Plays the "Africa" by Toto)
  *
- * Version: 2.11
- * Date: 30/03/2018
+ * Version: 3.0
+ * Date: 02/04/2018
  * Originally Created: 25/03/2018
  */
 
@@ -24,8 +24,8 @@ LED green(board.SHIELD_GREEN_LED);
 //[piano] This is the piano to play the song on.
 Piano piano(Speaker(board.SHIELD_SPEAKER));
 
-//[starWarsMusic] This is the song to be played. (How exciting!)
-StarWars starWarsMusic(piano, piano.TEMPO_VIVACE);
+//[africaByToto] This is the song to be played. (How exciting!)
+AfricaByToto africaByToto(piano, piano.TEMPO_PRESTO);
 
 /**
  * @brief Plays the song, then waits for the user to replay it.
@@ -37,7 +37,7 @@ int main()
     {
         green.on();
 
-        starWarsMusic.playSong();
+        africaByToto.playSong();
 
         green.off();
 
