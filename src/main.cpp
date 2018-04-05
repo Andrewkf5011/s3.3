@@ -7,7 +7,7 @@
  * An Example program to use the speaker on the application shield.
  * (Plays the "Africa" by Toto)
  *
- * Version: 3.0
+ * Version: 3.1
  * Date: 02/04/2018
  * Originally Created: 25/03/2018
  */
@@ -35,13 +35,14 @@ int main()
     //Main program loop
     while (1)
     {
+        //Wait until the user wants to play the song.
+        while(!(replay.digitalIn));
+
         green.on();
 
         africaByToto.playSong();
 
         green.off();
 
-        //Wait until the user wants to replay the song.
-        while(!(replay.digitalIn));
     }
 }
