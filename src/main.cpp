@@ -25,7 +25,7 @@ LED green(board.SHIELD_GREEN_LED);
 Piano piano(Speaker(board.SHIELD_SPEAKER));
 
 //[africaByToto] This is the song to be played. (How exciting!)
-AfricaByToto africaByToto(piano, piano.TEMPO_PRESTO);
+StarWars africaByToto(piano, piano.TEMPO_PRESTO);
 
 /**
  * @brief Plays the song, then waits for the user to replay it.
